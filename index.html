@@ -11,6 +11,40 @@
 </head>
 
 <body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-info">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-none"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size:22px;/*border:double 7px #069690;*/">Systems Eng. Carlos Grisanty J.</p>
+                    <hr>
+                    <div class="contact-info portfolio-info-card" style="box-shadow:none;">
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-android-calendar icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>1991-01-10</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-person icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>Carlos Grisanty</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-ios-telephone icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>+34 692 052 355</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-chatbubbles icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>+1 809 481 2406</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-at icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>CGJurado@gmail.com</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="background:linear-gradient(120deg, #696900, #069690);color:#fff;">
         <div class="container"><a class="navbar-brand logo" href="index.html"><img src="assets/img/CGWhite.png" width="50px" height="50px"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -28,8 +62,8 @@
             <div class="container">
                 <div class="avatar" style="background-image:url(&quot;assets/img/cg-hiking.jpg&quot;);background-position:center;"></div>
                 <div class="about-me">
-                    <p>Hello! I am <strong>Carlos Grisanty</strong>. I work as front end &nbsp;and back end developer. I have passion programming in new emerging technologies, always learning and sharing new experiences.</p><a class="btn btn-outline-primary"
-                        role="button" href="cv.html">Hire me</a></div>
+                    <p>Hello! I am <strong>Carlos Grisanty</strong>. I work as front end &nbsp;and back end developer. I have passion programming in new emerging technologies, always learning and sharing new experiences.</p><button class="btn btn-outline-success"
+                        type="button" data-target="#modal-info" data-toggle="modal">Hire me</button></div>
             </div>
         </section>
         <section class="portfolio-block photography">
@@ -44,7 +78,7 @@
         <section class="portfolio-block call-to-action border-bottom">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center content">
-                    <h3>Like what you see?</h3><button class="btn btn-outline-primary btn-lg" type="button">Hire me</button></div>
+                    <h3>Like what you see?</h3><button class="btn btn-outline-success btn-lg" type="button" data-toggle="modal" data-target="#modal-info">Hire me</button></div>
             </div>
         </section>
         <section class="portfolio-block skills">
@@ -55,7 +89,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline" style="background-color:#069690;"></i></div>
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-world-outline" style="background-color:#069690;"></i></div>
                             <div class="card-body">
                                 <h3 class="card-title">Web Developer</h3>
                                 <p class="card-text">More than 8 years of experience working on the latest technologies, with fixed salary and as a freelancer, with small teams of IT experts and alone. Started with pure javascript, now expert of all popular frameworks. (Angular,
@@ -65,7 +99,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline" style="background-color:#069690;"></i></div>
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-cloud-outline" style="background-color:#069690;"></i></div>
                             <div class="card-body">
                                 <h3 class="card-title">Back End Expert</h3>
                                 <p class="card-text">Starting with C, all the way to C#, java, and Nodejs. Relational, Nosql and hybrid databases like Postgres, professional experience as Project manager and great team member designing and implementing scalable and secure
@@ -75,7 +109,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline" style="background-color:#069690;"></i></div>
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-locked-outline" style="background-color:#069690;"></i></div>
                             <div class="card-body">
                                 <h3 class="card-title">Database Security</h3>
                                 <p class="card-text">Certified database security manager in recognized financial institutes. Master of the latest security protocols and encryptions used as the new standard, like elliptic curve encryption and blockchain technologies</p>
@@ -107,7 +141,7 @@
     </section>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+            <div class="links"><a href="cv.html">About me</a><a href="#" data-target="#modal-info" data-toggle="modal">Contact me</a><a href="projects-grid-cards.html">Projects</a></div>
             <div class="social-icons"><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
     </footer>

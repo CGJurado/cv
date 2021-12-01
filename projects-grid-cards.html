@@ -11,6 +11,40 @@
 </head>
 
 <body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-info">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-none"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size:22px;/*border:double 7px #069690;*/">Systems Eng. Carlos Grisanty J.</p>
+                    <hr>
+                    <div class="contact-info portfolio-info-card" style="box-shadow:none;">
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-android-calendar icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>1991-01-10</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-person icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>Carlos Grisanty</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-ios-telephone icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>+34 692 052 355</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-chatbubbles icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>+1 809 481 2406</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"><i class="icon ion-at icon" style="color:#069690;"></i></div>
+                            <div class="col-9"><span>CGJurado@gmail.com</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="background:linear-gradient(120deg, #696900, #069690);color:#fff;">
         <div class="container"><a class="navbar-brand logo" href="index.html"><img src="assets/img/CGWhite.png" width="50px" height="50px"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
@@ -84,7 +118,7 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
+            <div class="links"><a href="cv.html">About me</a><a href="#" data-target="#modal-info" data-toggle="modal">Contact me</a><a href="projects-grid-cards.html">Projects</a></div>
             <div class="social-icons"><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
     </footer>
